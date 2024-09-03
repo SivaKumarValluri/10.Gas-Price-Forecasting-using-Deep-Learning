@@ -20,8 +20,17 @@ Due to the recent economic and supply-chain turmoil gasoline prices across the w
     - Domestic Consumption of Gas (Demand)
     - Domestic Inflation as CPI
     - Historical Price of Gasoline
+##  Highlights (not exhaustive) ##
 
+Dataset insights:
+Seasonality in data:
 
+Trends in data:
+Correlation between features chosen:
+
+Feature importance:
+Princeple component analysis
+![image](https://github.com/user-attachments/assets/94111fe5-de3b-4632-95bf-cc143411b9d3)
 
 Final DNN model that predicts gas prices:
 ![image](https://github.com/user-attachments/assets/f829e86d-bb70-46ab-85be-7a02269751f2)
