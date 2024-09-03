@@ -22,6 +22,13 @@ Due to the recent economic and supply-chain turmoil gasoline prices across the w
     - Historical Price of Gasoline
 
 
+
+Final DNN model that predicts gas prices:
+![image](https://github.com/user-attachments/assets/f829e86d-bb70-46ab-85be-7a02269751f2)
+
+Final CNN model that predicts gas prices:
+![image](https://github.com/user-attachments/assets/4b0dc2b9-da8f-4aa9-bd31-88753e857b89)
+
 ## License ##
 Copyright 2022 University of Illinois Team Oglesby
 
