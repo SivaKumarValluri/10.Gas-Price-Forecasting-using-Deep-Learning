@@ -30,9 +30,10 @@ Trends in data:
 ![image](https://github.com/user-attachments/assets/8805035e-32ac-46d7-9fc4-66799f1b923d)
 
 Correlation between features chosen:
+![image](https://github.com/user-attachments/assets/702ffda6-caca-4f78-b010-8ab391638a7a)
 
 Feature importance:
-Princeple component analysis (shown as an example)
+Principal component analysis (shown as an example)
 ![image](https://github.com/user-attachments/assets/94111fe5-de3b-4632-95bf-cc143411b9d3)
 
 Final DNN model that predicts gas prices:
