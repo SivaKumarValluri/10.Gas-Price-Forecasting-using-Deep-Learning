@@ -1,6 +1,5 @@
 # CS547--Deep-Learning-Project
-Team Name
-Oglesby
+Work performed as part of CS547-Deep-Learning coursework.
 
 Team Members (in order of contribution)
 Siva Kumar Valluri
@@ -20,6 +19,7 @@ Due to the recent economic and supply-chain turmoil gasoline prices across the w
     - Domestic Consumption of Gas (Demand)
     - Domestic Inflation as CPI
     - Historical Price of Gasoline
+    
 ##  Highlights (not exhaustive) ##
 
 Dataset insights:
