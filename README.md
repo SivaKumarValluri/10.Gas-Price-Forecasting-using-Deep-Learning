@@ -29,7 +29,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 
-## Data Preprocessing and Initial Analysis ##
+## Data Preprocessing ##
 This code performs the following steps for predicting weekly gasoline prices:
 
 ### 1. Library Imports
@@ -114,3 +114,68 @@ This code performs the following steps for predicting weekly gasoline prices:
     - Feature Analysis: Various methods confirm that CPI, Production, and Reserve are crucial features for predicting gasoline prices.
     
     - Overall, the code demonstrates a structured approach to data preprocessing, model training, and feature analysis to predict gasoline prices effectively.
+
+## Initial Deep Learning Testing ##
+
+### Overview
+
+The code snippet you provided is focused on developing and evaluating multiple simple models to predict gasoline prices over an 8-week period using recurrent neural networks (RNNs). It involves preparing time series data, building models, and evaluating their performance to identify the best model based on the lowest mean absolute error (MAE). Here’s a more detailed breakdown:
+
+### Components and Workflow
+
+    - Objective:
+    
+    - Goal: Predict 8 weeks of gasoline prices using various simple models.
+    
+    - Evaluation Metric: Mean Absolute Error (MAE).
+
+### Data Preparation:
+
+    - WindowGenerator Class: (Obtained from Tensorflow documentation)
+    
+    Purpose: Generates windows of input and label data from the time series for training, validation, and testing.
+    
+    Key Methods:
+        split_window(): Splits the data into inputs and labels based on the defined window sizes.
+        plot(): Visualizes the inputs, labels, and predictions.
+        make_dataset(): Converts data into a TensorFlow dataset with appropriate windowing.
+        Properties: train, val, test, example - Return datasets and an example batch for plotting.
+    
+    -Model Training and Evaluation:
+        compile_and_fit() Function:
+        Purpose: Compiles and trains a given model with early stopping to avoid overfitting.
+        Parameters: Model, window object, patience for early stopping, maximum epochs, optimizer.
+        Performance Tracking:
+        multi_val_performance and multi_performance: Dictionaries to store validation and test performance metrics for different models.
+        
+### Model Definition:
+
+    modular_lstm_model() Function:
+        Purpose: Constructs a modular LSTM model.
+        Parameters: Number of neurons, dropout rate, activation functions for LSTM and Dense layers.
+        Architecture: Single LSTM layer followed by a Dense layer to produce predictions.
+    
+    Hyperparameter Optimization:
+        Optimization Process:
+        Goal: Test various activation functions and input steps to optimize model performance.
+        Parameters: Different activation functions for LSTM and Dense layers, varying input window sizes.
+        Loop: Trains models with different hyperparameters and evaluates their performance.
+        Performance Visualization:
+    
+        performance_plotter() Function:
+        Purpose: Plots the performance of different models based on MAE.
+        Parameters: Dictionaries with performance metrics, choice of plot type, width of bars.
+
+### Summary of the Workflow
+
+    - Initialize Data: Define the WindowGenerator to handle data preparation.
+    
+    - Model Construction: Create a modular LSTM model suitable for time series prediction.
+    
+    - Training: Use compile_and_fit() to train the model and evaluate it using the validation and test sets.
+    
+    - Hyperparameter Optimization: Iterate over different configurations to find the best-performing model.
+    
+    - Visualization: Plot the performance of different models to compare their effectiveness based on MAE.
+
+This code aims to identify the best simple RNN model for predicting gasoline prices over a multi-week horizon by experimenting with different configurations and tracking performance through rigorous evaluation and visualization.
