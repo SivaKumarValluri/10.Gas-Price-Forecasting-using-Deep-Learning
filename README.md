@@ -24,12 +24,15 @@ Due to the recent economic and supply-chain turmoil gasoline prices across the w
 
 Dataset insights:
 Seasonality in data:
+![image](https://github.com/user-attachments/assets/09252bc4-5ed5-4d18-b592-97cd2bd04daa)
 
 Trends in data:
+![image](https://github.com/user-attachments/assets/8805035e-32ac-46d7-9fc4-66799f1b923d)
+
 Correlation between features chosen:
 
 Feature importance:
-Princeple component analysis
+Princeple component analysis (shown as an example)
 ![image](https://github.com/user-attachments/assets/94111fe5-de3b-4632-95bf-cc143411b9d3)
 
 Final DNN model that predicts gas prices:
