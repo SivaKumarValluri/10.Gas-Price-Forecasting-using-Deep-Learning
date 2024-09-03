@@ -3,7 +3,7 @@ Team Name
 Oglesby
 
 Team Members (in order of contribution)
-Siva Kumar Valluri |
+Siva Kumar Valluri
 and Dimitrios Bralios |
 Pallav Ranjan |
 Pratik Sinha |
