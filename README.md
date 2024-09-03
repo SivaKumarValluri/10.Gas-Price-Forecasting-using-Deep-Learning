@@ -23,18 +23,63 @@ Due to the recent economic and supply-chain turmoil gasoline prices across the w
 ##  Highlights (not exhaustive) ##
 
 Dataset insights:
+
 Seasonality in data:
+
 ![image](https://github.com/user-attachments/assets/09252bc4-5ed5-4d18-b592-97cd2bd04daa)
 
 Trends in data:
+
 ![image](https://github.com/user-attachments/assets/8805035e-32ac-46d7-9fc4-66799f1b923d)
 
 Correlation between features chosen:
+
 ![image](https://github.com/user-attachments/assets/702ffda6-caca-4f78-b010-8ab391638a7a)
 
 Feature importance:
 Principal component analysis (shown as an example)
+
 ![image](https://github.com/user-attachments/assets/94111fe5-de3b-4632-95bf-cc143411b9d3)
+
+Baseline linear regression model: 
+
+![Screenshot 2024-09-03 153952](https://github.com/user-attachments/assets/8ab24a2b-afb0-43c1-9dc4-2d86e85a4cae)
+
+Testing different 'shallow' models using smaller data snippets (using repurposed tensorflow code) for initial direction: 
+
+I. Multi-variate Multi-time Long/Short Term Memory (LSTM) Flavored RNN (Optimized) model:
+
+![image](https://github.com/user-attachments/assets/33f8c6a9-b835-4273-959a-9aa960019ee4)
+
+II. Multi-time Long/Short Term Memory (LSTM) Flavored RNN (unpotimized) model:
+
+![image](https://github.com/user-attachments/assets/bbb32732-1e90-46d3-93e4-372f99981430)
+
+III. Multi time-step last prince baseline model:
+
+![image](https://github.com/user-attachments/assets/185390a7-9588-4216-af80-d537d9f5df66)
+
+IV. Multi-time step linear model:
+
+![image](https://github.com/user-attachments/assets/bf2c0787-0107-481b-a3fa-2034865d4bdd)
+
+V. Convolution neural network (unoptimized) model: 
+
+![image](https://github.com/user-attachments/assets/333d4a1f-2161-4a45-8329-ab3a364fe882)
+
+VI. Convolution neural network (optimized) model: 
+
+![image](https://github.com/user-attachments/assets/f2c020a8-e6e1-4fa7-ad94-57a4a2051ba9)
+
+VII. Dense neural netwrok model: 
+
+![image](https://github.com/user-attachments/assets/37d22cd4-4185-4f47-99f0-5c09b353c974)
+
+Comparing performance obtained by different models to work on most promising models:
+
+![image](https://github.com/user-attachments/assets/63cbdd1b-860a-4820-9c3a-0744c4d40144)
+
+Deep Neural Networks tested-
 
 Final DNN model that predicts gas prices:
 ![image](https://github.com/user-attachments/assets/f829e86d-bb70-46ab-85be-7a02269751f2)
